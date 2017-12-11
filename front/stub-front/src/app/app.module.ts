@@ -26,6 +26,9 @@ import { TranslationClass } from './commons/translate/translation';
 
 //Import routing
 import { routing } from './app.routing';
+import { HeaderComponent } from './commons/header/header.component';
+import { FooterComponent } from './commons/footer/footer.component';
+import { LandpageComponent } from './commons/landpage/landpage.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { routing } from './app.routing';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    TranslatePipe
+    TranslatePipe,
+    HeaderComponent,
+    FooterComponent,
+    LandpageComponent
   ],
   imports: [
     BrowserAnimationsModule,

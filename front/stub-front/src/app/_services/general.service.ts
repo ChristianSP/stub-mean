@@ -24,4 +24,39 @@ export class GeneralService {
             this.notify.next(data);
         }
     }
+
+    getLanguages() {
+        let objLangs = [
+            {
+                key: "es",
+                name: "ES"
+            },
+            {
+                key: "en",
+                name: "EN"
+            }
+        ]
+        return objLangs;
+    }
+
+    getMenuOptions() {
+        let objOptions = [
+            {
+                route: "/",
+                name: "label.inicio",
+                onlyLogged: true
+            },
+            {
+                route: "/login",
+                name: "label.login",
+                onlyNotLogged: true
+            },
+            {
+                route: "/signup",
+                name: "label.signup",
+                onlyNotLogged: true
+            },
+        ]
+        return objOptions;
+    }
 }

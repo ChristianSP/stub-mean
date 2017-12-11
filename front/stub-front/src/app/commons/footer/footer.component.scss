@@ -1,0 +1,62 @@
+@import "../../../variables.scss";
+
+@keyframes toLeft {
+    from {right: 0px;}
+    to {right: 92px;}
+}
+
+.footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.2rem;
+    background: $color-dark;
+    color: $color-light;
+    
+    .langs__wrapper{
+        display:flex;
+        align-items: center;
+        .lang{
+            padding: 0 0.5rem;
+            font-size: 0.77rem;
+            cursor:pointer;
+        }
+    }
+
+    .fa-github{
+        font-size: 1.25rem;
+    }
+
+    .git__link{
+        position: relative;
+        color: $color-light;
+        i{
+            background: $color-dark;
+            padding-right: 0.2rem;
+            width: 90px;
+            position: absolute;
+            right: 0px;
+            text-align: right;
+            top: -9px;
+            z-index: 2;
+            
+        }
+        span{
+            position: absolute;
+            left: -90px;
+            top: -11px;
+            z-index: 1;
+            font-size: 0.95rem;
+        }
+        &:hover{
+            i{
+                animation-name: toLeft;
+                animation-duration: 750ms;
+                animation-timing-function: ease-in;
+                animation-fill-mode:  forwards; 
+            }
+        }
+    }
+}
+

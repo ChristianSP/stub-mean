@@ -1,0 +1,54 @@
+@import "../../../variables.scss";
+.content__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    &:after{
+        background: url("../../../assets/stub_land.jpg") no-repeat center center fixed;
+        background-size: cover;
+        background-position-y: -250px;
+        transform: scaleX(-1);
+        position: absolute;
+        content: "";
+        top: 0;
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    
+    .title__wrapper{
+        .title{
+            font-weight: bold;
+            font-size: 6.255rem;
+            letter-spacing: 2px;
+            line-height: 8rem;
+        }
+    }
+
+    .description__wrapper{
+        
+        margin-bottom: 2rem;
+    }
+    .actions__wrapper{
+        .action{
+            border: 2px solid white;
+            width: 15rem;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover{
+                color: black;
+                border: 0;
+                background: $color-amarillo-land;
+            }
+        }
+    }
+}

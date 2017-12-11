@@ -1,0 +1,9 @@
+<div class="footer">
+  <div class="langs__wrapper">
+    <span *ngFor="let lang of languages" class="lang" (click)="changeLang(lang.key)">{{ lang.name }}</span>
+  </div>
+  <a class="git__link" href="https://github.com/ChristianSP/stub-mean">
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <span>Christian_SP</span>
+  </a>
+</div>

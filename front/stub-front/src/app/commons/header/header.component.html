@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="logo__wrapper">
+    <span class="logo">
+        <span>STUB-</span><span class="color-mongo">M</span><span>E</span><span class="color-angular">A</span><span class="color-node">N</span>
+    </span>
+  </div>
+  <div class="menu__wrapper">
+    <div class="option__wrapper" *ngFor="let item of options">
+      <span *ngIf="canShowOption(item)" class="option__item" (click)="activateOption(item)">{{ item.name | translate }}</span>
+    </div>
+  </div>
+</div>

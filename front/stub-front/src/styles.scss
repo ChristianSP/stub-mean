@@ -1,2 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "./variables.scss";
+
+html,body{
+    height: 100%;
+    margin: 0;
+    p{
+        margin: 0;
+    }
+}
+
+.d-grid{
+    display: grid;
+
+    &.g-c1__auto-r3__35__auto__20{
+        grid-template: 65px auto 35px / auto;
+    }
+}
+
+.color-mongo{
+    color:$color-mongo;
+}
+.color-angular{
+    color:$color-angular;
+}
+.color-node{
+    color:$color-node;
+}
+
+.logo{
+        font-size: 1.22rem;
+        font-weight: bold;
+        text-decoration: overline;
+        letter-spacing: 2px;
+    }
+
+    .login__wrapper{
+    background: $color-bg-space;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+
+    .form__wrapper{
+        margin: 2.25rem 0;
+        width: 22.5rem;
+        display: flex;
+        flex-direction: column;
+        .input__wrapper,.button__wrapper{
+            >*{
+                width: 100%;
+            }
+        }
+        .input__wrapper{
+            padding: 0.5rem 0;
+            input{
+                padding: 0.77rem 0.94rem;
+                font-size: 1.15rem;
+                outline: 0;
+                border-radius: 3px;
+                border: 1px solid #c6c9ce;
+                box-shadow: inset 0 1px 0 #d5d7de;
+                background: $color-bg-input-space;
+
+                &:focus{
+                    background: white;
+                }
+            }
+        }
+        .button__wrapper{
+            padding: 1.3rem 0;
+            button{
+                padding: 0.89rem 0;
+                box-shadow: rgba(23,43,99,.35) 0 7px;
+                border: 0;
+                font-weight: 600;
+                color: #fff;
+                box-shadow: rgba(23,43,99,.24) 0 7px 28px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 0.81rem;
+                text-shadow: 1px 1px rgba(0,0,0,.09);
+                border-radius: 4px;
+                cursor: pointer;
+                text-align: center;
+                background: linear-gradient($color-btn-space,$color-btn-2-space);
+            }
+        }
+    }
+
+}

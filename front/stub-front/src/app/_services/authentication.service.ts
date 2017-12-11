@@ -21,9 +21,9 @@ export class AuthenticationService {
         private router: Router) {
 
         if (localStorage.getItem('currentUser')) {
-            var currentTokenUser = JSON.parse(localStorage.getItem('currentUser')).token;
-            this.token = currentTokenUser;
             try {
+                var currentTokenUser = JSON.parse(localStorage.getItem('currentUser')).token;
+                this.token = currentTokenUser;
                 this.currentUser = this.jwtHelper.decodeToken(this.token);
             } catch (e) {
                 console.debug("ERROR CONSTRUCTOR AUTH-SERVICE: " + e);
